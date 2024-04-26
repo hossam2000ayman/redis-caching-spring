@@ -22,12 +22,10 @@ public class InvoiceServiceImplementation implements InvoiceService {
 
     private final InvoiceRepository invoiceRepository;
 
-    private final ModelMapper modelMapper;
 
     @Autowired
-    public InvoiceServiceImplementation(InvoiceRepository invoiceRepository, ModelMapper modelMapper) {
+    public InvoiceServiceImplementation(InvoiceRepository invoiceRepository) {
         this.invoiceRepository = invoiceRepository;
-        this.modelMapper = modelMapper;
     }
 
     @Override
